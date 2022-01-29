@@ -1,0 +1,101 @@
+:root{
+    --vermelho: #e50914;
+    --preta: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.logo{
+    margin-left: 2rem;
+    width: 15rem;
+    height: 7rem;
+}
+nav{
+    margin-left: 2rem;
+}
+
+.menu{
+    margin: 1rem ;
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+}
+.menu:hover{
+    color: gray;
+}
+
+.filme-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%) ,url(../img/the100.jpg);
+    background-size:cover;
+    
+
+}
+
+.titulo{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 2rem 5rem;
+}
+
+
+.frase{
+    font-size: 1.5rem;
+    max-width: 500px;
+    line-height: 2rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.container-botoes{
+    display: flex;
+    margin:7rem 5rem;
+}
+
+.botoes{
+    padding: 1.2rem 3rem;
+    background-color: rgba(0,0,0,.50);
+    border-style: none;
+    color: white;
+    margin-right: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .3s ;
+}
+
+.botoes:hover{
+    background-color: white;
+    color: black;
+}
+
+.botoes i {
+    margin-right: 0.5rem;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
